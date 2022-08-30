@@ -150,6 +150,9 @@ public class AccountService {
 	
 	public Account getMyAccount(String token) throws InvalidAccessException {
 		if(authClient.validatingToken(token).isValidStatus()) {
+			if(authClient.validatingToken(token).getUserRole().equalsIgnoreCase("ROLE_EMPLOYEE")) {
+				return null;
+			}
 			String customerId = authClient.validatingToken(token).getCustomerId();
 			return accountRepository.findByCustomerId(customerId).get();
 		}

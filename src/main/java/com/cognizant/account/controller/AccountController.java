@@ -39,7 +39,7 @@ public class AccountController {
 	StatementService statementService;
 	
 	@PostMapping("/create-account")
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	public ResponseEntity<?> createAccount(@RequestHeader(name="Authorization")String token,@RequestBody AccountDTO accountDTO) {
 		try {
 			AccountCreationStatus creationStatus = accountService.createAccount(token, accountDTO);
@@ -56,7 +56,7 @@ public class AccountController {
 		}
 	}
 
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@GetMapping("/get-accounts/{accountId}")
 	public ResponseEntity<?> getAccounts(@RequestHeader(name="Authorization")String token,@PathVariable String accountId) {
 		try {
@@ -72,7 +72,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@GetMapping("/get-customer-accounts/{customerId}")
 	public ResponseEntity<?> getCustomerAccounts(@RequestHeader(name="Authorization")String token,@PathVariable String customerId) {
 		try {
@@ -88,7 +88,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000")
+	@CrossOrigin(origins = "http://localhost:5000")
 	@GetMapping("/get-my-account")
 	public ResponseEntity<?> getMyAccount(@RequestHeader(name = "Authorization")String token){
 		try {
@@ -103,7 +103,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@GetMapping("/getAccountStatement/{accountId}/{fromDate}/{toDate}")
 	public ResponseEntity<?> getAccountStatement(@RequestHeader(name="Authorization")String token,@PathVariable String fromDate, @PathVariable String toDate, @PathVariable String accountId){
 		try {
@@ -113,7 +113,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@GetMapping("/getAccountStatement/{accountId}")
 	public ResponseEntity<?> getAccountStatement(@RequestHeader(name="Authorization")String token,@PathVariable String accountId){
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -133,7 +133,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@PostMapping("/deposit")
 	public ResponseEntity<?> deposit(@RequestHeader(name="Authorization")String token,@RequestBody TransactionDTO transactionDTO){
 		try {
@@ -150,7 +150,7 @@ public class AccountController {
 		}
 	}
 	
-	@CrossOrigin(origins ="http://localhost:3000")
+	@CrossOrigin(origins ="http://localhost:5000")
 	@PostMapping("/withdraw")
 	public ResponseEntity<?> withdraw(@RequestHeader(name="Authorization")String token,@RequestBody TransactionDTO transactionDTO){
 		try {
