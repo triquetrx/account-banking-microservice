@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.service;
+package com.cognizant.account.service.impl;
 
 import java.util.Date;
 import java.util.List;
@@ -10,21 +10,23 @@ import org.springframework.stereotype.Service;
 import com.cognizant.account.clients.AuthClient;
 import com.cognizant.account.clients.CustomerClient;
 import com.cognizant.account.clients.TransactionClient;
-import com.cognizant.account.clients.dto.AccountDTO;
-import com.cognizant.account.clients.dto.CustomerDTO;
-import com.cognizant.account.clients.dto.OneWayTransactionDTO;
-import com.cognizant.account.clients.dto.StatementDTO;
-import com.cognizant.account.clients.dto.TransactionDTO;
-import com.cognizant.account.clients.exceptions.InvalidAccessException;
-import com.cognizant.account.clients.exceptions.UserDoesNotExistsException;
-import com.cognizant.account.clients.model.Account;
-import com.cognizant.account.clients.model.AccountCreationStatus;
-import com.cognizant.account.clients.model.TransactionStatus;
-import com.cognizant.account.clients.repository.AccountRepository;
+import com.cognizant.account.dto.AccountDTO;
+import com.cognizant.account.dto.CustomerDTO;
+import com.cognizant.account.dto.OneWayTransactionDTO;
+import com.cognizant.account.dto.StatementDTO;
+import com.cognizant.account.dto.TransactionDTO;
+import com.cognizant.account.exceptions.InvalidAccessException;
+import com.cognizant.account.exceptions.UserDoesNotExistsException;
+import com.cognizant.account.model.Account;
+import com.cognizant.account.model.AccountCreationStatus;
+import com.cognizant.account.model.TransactionStatus;
+import com.cognizant.account.repository.AccountRepository;
+import com.cognizant.account.service.AccountService;
+import com.cognizant.account.service.StatementService;
 
 @Service
-public class AccountService {
-
+public class AccountServiceImpl implements AccountService {
+	
 	@Autowired
 	AccountRepository accountRepository;
 
@@ -40,6 +42,7 @@ public class AccountService {
 	@Autowired
 	CustomerClient customerClient;
 
+	@Override
 	public AccountCreationStatus createAccount(String token, AccountDTO accountDTO) throws InvalidAccessException {
 
 		if (authClient.validatingToken(token).isValidStatus()
@@ -48,19 +51,19 @@ public class AccountService {
 			String id = "ACC" + accountRepository.count();
 			if (accountDTO.getAccountType().equalsIgnoreCase("SAVINGS") && accountDTO.getDeposit() >= 400) {
 				accountRepository.save(new Account(id, accountDTO.getAccountType(), customers.getCustomerId(),
-						accountDTO.getDeposit()));
+						0));
 				customerClient.markAccountAsCreated(token, accountDTO.getCustomerId());
 				transactionClient.deposit(token, new OneWayTransactionDTO(id, "NEW_ACCOUNT_OPEN", "CASH", accountDTO.getDeposit()));
 				return new AccountCreationStatus(accountDTO.getAccountType() + "_ACCOUNT_CREATED", id);
 			} else if (accountDTO.getAccountType().equalsIgnoreCase("CURRENT") && accountDTO.getDeposit() >= 1000) {
 				accountRepository.save(new Account(id, accountDTO.getAccountType(), customers.getCustomerId(),
-						accountDTO.getDeposit()));
+						0));
 				customerClient.markAccountAsCreated(token, accountDTO.getCustomerId());
 				transactionClient.deposit(token, new OneWayTransactionDTO(id, "NEW_ACCOUNT_OPEN", "CASH", accountDTO.getDeposit()));
 				return new AccountCreationStatus(accountDTO.getAccountType() + "_ACCOUNT_CREATED", id);
 			} else if (accountDTO.getAccountType().equalsIgnoreCase("ZERO BALANCE")) {
 				accountRepository.save(new Account(id, accountDTO.getAccountType(), customers.getCustomerId(),
-						accountDTO.getDeposit()));
+						0));
 				customerClient.markAccountAsCreated(token, accountDTO.getCustomerId());
 				transactionClient.deposit(token, new OneWayTransactionDTO(id, "NEW_ACCOUNT_OPEN", "CASH", accountDTO.getDeposit()));
 				return new AccountCreationStatus(accountDTO.getAccountType() + "_ACCOUNT_CREATED", id);
@@ -72,6 +75,7 @@ public class AccountService {
 
 	}
 
+	@Override
 	public List<Account> getAllAccounts(String token) throws InvalidAccessException {
 
 		if (authClient.validatingToken(token).isValidStatus()
@@ -82,6 +86,7 @@ public class AccountService {
 
 	}
 
+	@Override
 	public Account getAccountById(String token, String id) throws InvalidAccessException, UserDoesNotExistsException {
 
 		if (authClient.validatingToken(token).isValidStatus()) {
@@ -95,6 +100,7 @@ public class AccountService {
 
 	}
 
+	@Override
 	public Account getAccountByCustomerId(String token, String id)
 			throws InvalidAccessException, UserDoesNotExistsException {
 
@@ -110,6 +116,7 @@ public class AccountService {
 
 	}
 
+	@Override
 	public TransactionStatus withdraw(String token, TransactionDTO transactionDTO)
 			throws UserDoesNotExistsException, InvalidAccessException {
 		if (authClient.validatingToken(token).isValidStatus()) {
@@ -129,6 +136,7 @@ public class AccountService {
 		throw new InvalidAccessException();
 	}
 
+	@Override
 	public TransactionStatus deposit(String token, TransactionDTO transactionDTO)
 			throws UserDoesNotExistsException, InvalidAccessException {
 		if (authClient.validatingToken(token).isValidStatus()) {
@@ -148,6 +156,7 @@ public class AccountService {
 		throw new InvalidAccessException();
 	}
 	
+	@Override
 	public Account getMyAccount(String token) throws InvalidAccessException {
 		if(authClient.validatingToken(token).isValidStatus()) {
 			if(authClient.validatingToken(token).getUserRole().equalsIgnoreCase("ROLE_EMPLOYEE")) {
@@ -158,5 +167,6 @@ public class AccountService {
 		}
 		throw new InvalidAccessException();
 	}
+
 
 }

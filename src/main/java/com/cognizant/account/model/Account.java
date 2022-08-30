@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.model;
+package com.cognizant.account.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

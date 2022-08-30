@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 
-import com.cognizant.account.clients.dto.OneWayTransactionDTO;
+import com.cognizant.account.dto.OneWayTransactionDTO;
 
 @FeignClient(name = "transaction-client", url = "http://localhost:8004")
 public interface TransactionClient {

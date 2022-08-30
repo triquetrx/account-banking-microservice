@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
 
-import com.cognizant.account.clients.dto.CustomerDTO;
+import com.cognizant.account.dto.CustomerDTO;
 
 @FeignClient(name="customer-microservice",url="http://localhost:8002")
 public interface CustomerClient {

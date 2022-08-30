@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.service;
+package com.cognizant.account.service.impl;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -9,16 +9,18 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.cognizant.account.clients.dto.StatementDTO;
-import com.cognizant.account.clients.model.Statement;
-import com.cognizant.account.clients.repository.StatementRepository;
+import com.cognizant.account.dto.StatementDTO;
+import com.cognizant.account.model.Statement;
+import com.cognizant.account.repository.StatementRepository;
+import com.cognizant.account.service.StatementService;
 
 @Service
-public class StatementService {
-
+public class StatementServiceImpl implements StatementService {
+	
 	@Autowired
 	StatementRepository statementRepository;
 
+	@Override
 	public void writeStatement(StatementDTO statement) {
 		String id = "STATEMENT" + statementRepository.count();
 		statementRepository
@@ -26,6 +28,7 @@ public class StatementService {
 						statement.getWithdrawal(), statement.getDeposit(), statement.getClosingBalance()));
 	}
 	
+	@Override
 	public List<Statement> getAllStatements(String fromDate, String toDate,String accountId) throws ParseException{
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		List<Statement> statementDateBetween = statementRepository.findByStatementDateBetween(dateFormat.parse(fromDate), dateFormat.parse(toDate));
@@ -38,6 +41,7 @@ public class StatementService {
 		return result;
 	}
 	
+	@Override
 	public List<Statement> getAllStatements(Date fromDate, Date toDate,String accountId) throws ParseException{
 		List<Statement> statementDateBetween = statementRepository.findByStatementDateBetween(fromDate, toDate);
 		List<Statement> result = new ArrayList<>();		

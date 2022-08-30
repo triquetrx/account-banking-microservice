@@ -17,15 +17,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cognizant.account.clients.dto.AccountDTO;
-import com.cognizant.account.clients.dto.TransactionDTO;
-import com.cognizant.account.clients.exceptions.InvalidAccessException;
-import com.cognizant.account.clients.exceptions.UserDoesNotExistsException;
-import com.cognizant.account.clients.model.Account;
-import com.cognizant.account.clients.model.AccountCreationStatus;
-import com.cognizant.account.clients.model.TransactionStatus;
-import com.cognizant.account.clients.service.AccountService;
-import com.cognizant.account.clients.service.StatementService;
+import com.cognizant.account.dto.AccountDTO;
+import com.cognizant.account.dto.TransactionDTO;
+import com.cognizant.account.exceptions.InvalidAccessException;
+import com.cognizant.account.exceptions.UserDoesNotExistsException;
+import com.cognizant.account.model.Account;
+import com.cognizant.account.model.AccountCreationStatus;
+import com.cognizant.account.model.TransactionStatus;
+import com.cognizant.account.service.AccountService;
+import com.cognizant.account.service.StatementService;
 
 import feign.FeignException.FeignClientException;
 

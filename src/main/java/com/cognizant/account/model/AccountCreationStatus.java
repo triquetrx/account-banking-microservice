@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.model;
+package com.cognizant.account.model;
 
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;

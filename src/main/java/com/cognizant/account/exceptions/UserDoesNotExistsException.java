@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.exceptions;
+package com.cognizant.account.exceptions;
 
 public class UserDoesNotExistsException extends Exception {
 

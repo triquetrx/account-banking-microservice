@@ -1,25 +1,19 @@
-package com.cognizant.account.clients.model;
+package com.cognizant.account.dto;
 
 import java.util.Date;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-public @Data @NoArgsConstructor @AllArgsConstructor class Statement {
-
-	@Id
-	private String statementId;
-	private String accountId;
+public @Data @AllArgsConstructor @NoArgsConstructor class StatementDTO {
+	
 	private Date statementDate;
+	private String accountId;
 	private String narration;
 	private String refNo;
 	private double withdrawal;
 	private double deposit;
 	private double closingBalance;
-	
+
 }

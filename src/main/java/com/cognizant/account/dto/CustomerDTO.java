@@ -1,4 +1,4 @@
-package com.cognizant.account.clients.dto;
+package com.cognizant.account.dto;
 
 import java.util.Date;
 
