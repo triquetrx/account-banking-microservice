@@ -61,3 +61,94 @@
 10:06:22.955 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
 10:06:22.965 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ACCOUNT-MICROSERVICE/LTIN287456.cts.com:account-microservice:8003 - deregister  status: 200
 10:06:22.976 [Thread-1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+10:06:23.330 [restartedMain] INFO  c.c.a.AccountMicroserviceApplication - Starting AccountMicroserviceApplication using Java 17.0.1 on LTIN287456 with PID 49520 (C:\Users\2146122\mfpe\account-microservice\target\classes started by 2146122 in C:\Users\2146122\mfpe\account-microservice)
+10:06:23.331 [restartedMain] INFO  c.c.a.AccountMicroserviceApplication - No active profile set, falling back to 1 default profile: "default"
+10:06:23.916 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+10:06:23.951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+10:06:24.127 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f374162d-f279-391d-bc90-27fd9596124a
+10:06:24.270 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8003 (http)
+10:06:24.271 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8003"]
+10:06:24.271 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:06:24.272 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+10:06:24.344 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:06:24.345 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1004 ms
+10:06:24.413 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+10:06:24.426 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+10:06:24.472 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+10:06:24.473 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+10:06:24.559 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+10:06:24.559 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+10:06:24.733 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+10:06:24.749 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+10:06:25.318 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+10:06:25.554 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+10:06:25.574 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+10:06:25.579 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+10:06:25.580 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:06:25.599 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+10:06:25.599 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+10:06:25.599 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+10:06:25.600 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+10:06:25.600 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+10:06:25.600 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+10:06:25.600 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+10:06:25.642 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+10:06:25.645 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+10:06:25.646 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+10:06:25.648 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1661920585648 with initial instances count: 4
+10:06:25.650 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application ACCOUNT-MICROSERVICE with eureka with status UP
+10:06:25.650 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1661920585650, current=UP, previous=STARTING]
+10:06:25.651 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ACCOUNT-MICROSERVICE/LTIN287456.cts.com:account-microservice:8003: registering service...
+10:06:25.652 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8003"]
+10:06:25.658 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8003 (http) with context path ''
+10:06:25.659 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8003
+10:06:25.673 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_ACCOUNT-MICROSERVICE/LTIN287456.cts.com:account-microservice:8003 - registration status: 204
+10:06:25.837 [restartedMain] INFO  c.c.a.AccountMicroserviceApplication - Started AccountMicroserviceApplication in 2.768 seconds (JVM running for 307.826)
+10:06:25.840 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:11:25.612 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:12:26.896 [http-nio-8003-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:12:26.896 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:12:26.898 [http-nio-8003-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+10:12:27.929 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:12:27.929 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+10:12:27.930 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+10:12:28.043 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.createAccount
+10:12:28.043 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.createAccount
+10:12:34.374 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:12:34.374 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:12:34.465 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:12:34.466 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:12:59.829 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+10:12:59.830 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+10:12:59.859 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+10:12:59.860 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+10:12:59.885 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+10:12:59.885 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+10:13:31.077 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:13:31.078 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:13:31.143 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:13:31.143 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:13:50.647 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:13:50.647 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+10:13:50.647 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+10:14:07.147 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getAccountById
+10:14:07.147 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccounts
+10:14:07.264 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:14:07.265 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.withdraw
+10:14:07.265 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.withdraw
+10:14:35.858 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getAccountById
+10:14:35.858 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccounts
+10:14:35.978 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:14:35.978 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.withdraw
+10:14:35.978 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.withdraw
+10:14:36.032 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:14:36.032 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+10:14:36.032 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+10:14:44.845 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:14:44.845 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:14:44.908 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:14:44.909 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:14:48.460 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:14:48.460 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:14:48.517 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:14:48.517 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
