@@ -152,3 +152,108 @@
 10:14:48.460 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
 10:14:48.517 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
 10:14:48.517 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:16:25.615 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:21:25.628 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:26:25.629 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:31:25.638 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:36:25.653 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:41:25.663 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:46:25.674 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:46:32.088 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:46:32.088 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:46:32.140 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:46:32.140 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:55:43.954 [HikariPool-2 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m18s656ms134µs600ns).
+10:56:14.331 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+10:56:25.471 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:56:25.471 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:56:25.524 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+10:56:25.524 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+10:58:21.928 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+10:58:21.929 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+10:58:21.929 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+11:00:10.421 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getAccountById
+11:00:10.422 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccounts
+11:00:10.515 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:00:10.516 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.withdraw
+11:00:10.516 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.withdraw
+11:00:15.581 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getAccountById
+11:00:15.581 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccounts
+11:00:15.671 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:00:15.671 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.withdraw
+11:00:15.671 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.withdraw
+11:01:14.344 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:02:27.792 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getAccountById
+11:02:27.792 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccounts
+11:02:27.885 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:02:27.885 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.withdraw
+11:02:27.885 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.withdraw
+11:02:27.938 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:02:27.938 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+11:02:27.939 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+11:06:14.351 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:07:05.990 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:07:05.991 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:07:06.039 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:07:06.039 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:07:21.335 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:07:21.335 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:07:58.834 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:07:58.835 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:08:10.846 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:08:10.846 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:08:42.248 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:08:42.249 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:11:14.353 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:16:14.365 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:21:14.380 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:26:14.393 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:31:14.406 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:36:10.244 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:36:10.245 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+11:36:10.245 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+11:36:10.271 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.createAccount
+11:36:10.271 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.createAccount
+11:36:14.422 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:36:20.651 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:36:20.652 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:36:20.694 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:36:20.694 [http-nio-8003-exec-5] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:36:22.355 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:36:22.355 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:36:22.400 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:36:22.400 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:39:12.330 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:39:12.331 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:39:47.345 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:39:47.346 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:39:47.424 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:39:47.424 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:39:48.961 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:39:48.962 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:40:12.166 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:40:12.167 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:40:37.580 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:40:37.580 [http-nio-8003-exec-6] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:40:37.629 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:40:37.629 [http-nio-8003-exec-7] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:40:40.815 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:40:40.815 [http-nio-8003-exec-9] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:40:40.859 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:40:40.859 [http-nio-8003-exec-10] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:40:54.703 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.writeStatement
+11:40:54.703 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.deposit
+11:40:54.704 [http-nio-8003-exec-1] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.deposit
+11:41:14.428 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:41:16.779 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:41:16.780 [http-nio-8003-exec-8] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:41:16.858 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.AccountServiceImpl.getMyAccount
+11:41:16.859 [http-nio-8003-exec-4] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getMyAccount
+11:41:17.763 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:41:17.763 [http-nio-8003-exec-3] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:41:26.063 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.service.impl.StatementServiceImpl.getAllStatements
+11:41:26.063 [http-nio-8003-exec-2] INFO  c.c.account.transactions.Logging - Called Application for com.cognizant.account.controller.AccountController.getAccountStatement
+11:46:14.442 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:51:14.481 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+11:56:14.490 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+12:01:14.494 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

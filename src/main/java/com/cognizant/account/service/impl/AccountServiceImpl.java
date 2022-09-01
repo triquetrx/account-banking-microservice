@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -43,6 +45,7 @@ public class AccountServiceImpl implements AccountService {
 	CustomerClient customerClient;
 
 	@Override
+	@Transactional
 	public AccountCreationStatus createAccount(String token, AccountDTO accountDTO) throws InvalidAccessException {
 
 		if (authClient.validatingToken(token).isValidStatus()
@@ -76,6 +79,7 @@ public class AccountServiceImpl implements AccountService {
 	}
 
 	@Override
+	@Transactional
 	public List<Account> getAllAccounts(String token) throws InvalidAccessException {
 
 		if (authClient.validatingToken(token).isValidStatus()

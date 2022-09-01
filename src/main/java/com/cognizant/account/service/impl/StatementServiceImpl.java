@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +23,7 @@ public class StatementServiceImpl implements StatementService {
 	StatementRepository statementRepository;
 
 	@Override
+	@Transactional
 	public void writeStatement(StatementDTO statement) {
 		String id = "STATEMENT" + statementRepository.count();
 		statementRepository
@@ -29,6 +32,7 @@ public class StatementServiceImpl implements StatementService {
 	}
 	
 	@Override
+	@Transactional
 	public List<Statement> getAllStatements(String fromDate, String toDate,String accountId) throws ParseException{
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 		List<Statement> statementDateBetween = statementRepository.findByStatementDateBetween(dateFormat.parse(fromDate), dateFormat.parse(toDate));
