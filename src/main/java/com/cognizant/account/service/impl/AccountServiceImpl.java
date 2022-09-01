@@ -68,7 +68,9 @@ public class AccountServiceImpl implements AccountService {
 				accountRepository.save(new Account(id, accountDTO.getAccountType(), customers.getCustomerId(),
 						0));
 				customerClient.markAccountAsCreated(token, accountDTO.getCustomerId());
-				transactionClient.deposit(token, new OneWayTransactionDTO(id, "NEW_ACCOUNT_OPEN", "CASH", accountDTO.getDeposit()));
+				if(accountDTO.getDeposit()>0) {					
+					transactionClient.deposit(token, new OneWayTransactionDTO(id, "NEW_ACCOUNT_OPEN", "CASH", accountDTO.getDeposit()));
+				}
 				return new AccountCreationStatus(accountDTO.getAccountType() + "_ACCOUNT_CREATED", id);
 			} else {
 				return new AccountCreationStatus("INVALID_REQUEST", "NOT_APPLICABLE");
